@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "mission7",
   "main": "index.js",
+  "nodemonConfig": {
+    "ignore": [
+      "test/*",
+      "docs/*"
+    ],
+    "delay": 2500
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --exec babel-node index.js"
@@ -20,5 +27,5 @@
     "@babel/preset-env": "^7.23.3",
     "nodemon": "^3.0.1"
   },
-  "type":"module"
+  "type": "module"
 }
